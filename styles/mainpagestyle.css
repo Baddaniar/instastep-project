@@ -9,7 +9,6 @@ p{
     height: 60px;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 nav{
@@ -30,6 +29,7 @@ nav{
 }
 
 .search{
+    position: relative;
     padding-left: 30px;
     width: 252px;
     height: 36px;
@@ -37,11 +37,21 @@ nav{
     border-radius: 8px;
     border: none;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search_text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8E8E8E;
+    font-family: 'Roboto', sans-serif;
 }
 
 main{
     background-color: #F9F9F9;
-    height: 100vh;
     border-top: 1px solid #EFEFEF;
 }
 
@@ -148,15 +158,8 @@ main{
     margin-top: 18px;
 }
 
-.search::placeholder{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #8E8E8E;
-    font-family: 'Roboto', sans-serif;
-}
-
 .search_logo{
     position: absolute;
-    margin-left: 37.5%;
+    top: 10px;
+    left: 10px;
 }
